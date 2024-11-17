@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+            h1{
+                
+                margin: 0;
+                padding: -200px 0;
+                color: #00539F;
+                text-shadow: 3px 3px 1px black;
+                font-size: 50px;
+                }
+            button {
+    
+                background-color: #4CAF50; /* Green */
+    
+                border: none;
+    
+                color: white;
+    
+                padding: 15px 32px;
+    
+                text-align: center;
+    
+                text-decoration: none;
+    
+                display: inline-block;
+    
+                font-size: 50px;
+    
+                margin: 10px 2px;
+    
+                cursor: pointer;
+    
+                }
+            p{
+                color:rgb(37, 9, 9);
+                font-size:300%
+            }
+    
+        </style>
+        <meta charset="UTF-8">
+        <title>logining Page</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="center">
+    <form method='post' action={{ url_for('loginspace') }}> 
+        <p>
+            <label>username:</label><br>
+            <input type='text' name='username' /><br>
+            <label>password:</label><br>
+            <input type='text' name='password' /><br>
+  
+        </p>
+        <p>
+            <button type='submit'>start</button>
+        </p>    
+    </form>
+        </div>
+    </div>
+</body>
+</html>

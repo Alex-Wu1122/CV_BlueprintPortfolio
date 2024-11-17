@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+            h1{
+                
+                margin: 0;
+                padding: -200px 0;
+                color: #00539F;
+                text-shadow: 3px 3px 1px black;
+                font-size: 50px;
+                }
+            button {
+    
+                background-color: #4CAF50; /* Green */
+    
+                border: none;
+    
+                color: white;
+    
+                padding: 15px 32px;
+    
+                text-align: center;
+    
+                text-decoration: none;
+    
+                display: inline-block;
+    
+                font-size: 50px;
+    
+                margin: 10px 2px;
+    
+                cursor: pointer;
+    
+                }
+            p{
+                color:rgb(37, 9, 9);
+                font-size:300%
+            }
+    
+        </style>
+        <meta charset="UTF-8">
+        <title>receipt Page</title>
+    </head>
+
+<body>
+    <div class="container">
+
+    <div class="center">
+        <p>
+            <label>sender:{{sender}}</label><br>
+            <label>receiver:{{receiver}}</label><br>
+            <label>amount:{{amount}}</label><br>
+            <label>balance:{{balance}}</label><br>
+            <label>等待區塊鏈更新...</label>
+        </p>   
+    <a href="loginspace">
+        <button class="btn btn-primary btn-lg">切換帳號</button>
+    </a>
+    <a href="home">
+        <button class="btn btn-primary btn-lg">首頁</button>
+    </a>
+    </div>
+    </div>
+</body>
+</html>
